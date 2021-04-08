@@ -46,6 +46,14 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Internal repo</name>
+            <url>file://c:/Users/amarouch/Spring5/internalRepo</url>
+        </repository>
+    </distributionManagement>
+
     <scm>
         <developerConnection>scm:git:https://github.com/hakimamarouche/sfg-pet-clinic.git</developerConnection>
     </scm>
