@@ -9,14 +9,6 @@
 
     <artifactId>pet-clinic-web</artifactId>
 
-    <!-- Web dependencies -->
-    <properties>
-        <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
-        <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
-        <webjars-jquery.version>2.2.4</webjars-jquery.version>
-        <wro4j.version>1.8.0</wro4j.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -54,17 +46,17 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
-            <version>${webjars-jquery.version}</version>
+            <version>2.2.4</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery-ui</artifactId>
-            <version>${webjars-jquery-ui.version}</version>
+            <version>1.11.4</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>${webjars-bootstrap.version}</version>
+            <version>3.3.6</version>
         </dependency>
         <!-- end of webjars -->
 
@@ -76,7 +68,7 @@
             <plugin>
                 <groupId>ro.isdc.wro4j</groupId>
                 <artifactId>wro4j-maven-plugin</artifactId>
-                <version>${wro4j.version}</version>
+                <version>1.8.0</version>
                 <executions>
                     <execution>
                         <phase>generate-resources</phase>
@@ -96,7 +88,7 @@
                     <dependency>
                         <groupId>org.webjars</groupId>
                         <artifactId>bootstrap</artifactId>
-                        <version>${webjars-bootstrap.version}</version>
+                        <version>3.3.6</version>
                     </dependency>
                     <dependency>
                         <groupId>org.mockito</groupId>
