@@ -8,13 +8,13 @@ import java.util.Set;
 @Table(name = "owners")
 public class Owner extends Person {
 
-    @Column("address")
+    @Column(name = "address")
     private String address;
 
-    @Column("city")
+    @Column(name = "city")
     private String city;
 
-    @Column("telephone")
+    @Column(name = "telephone")
     private String telephone;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")

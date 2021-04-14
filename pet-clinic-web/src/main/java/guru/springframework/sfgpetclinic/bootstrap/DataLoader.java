@@ -58,8 +58,8 @@ public class DataLoader implements CommandLineRunner {
         Speciality savedDentistery = specialtyService.save(dentistery);
 
         Owner owner1 = new Owner();
-        owner1.setFirstname("IdoleBunty");
-        owner1.setLastname("Koun");
+        owner1.setFirstName("IdoleBunty");
+        owner1.setLastName("Koun");
         owner1.setAddress("75 Queen");
         owner1.setCity("Montreal");
         owner1.setTelephone("5149876859");
@@ -74,8 +74,8 @@ public class DataLoader implements CommandLineRunner {
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setFirstname("Hakim");
-        owner2.setLastname("Amarouche");
+        owner2.setFirstName("Hakim");
+        owner2.setLastName("Amarouche");
         owner2.setAddress("75 Queen");
         owner2.setCity("Montreal");
         owner2.setTelephone("5149876859");
@@ -92,15 +92,15 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("Loaded Owners...");
 
         Vet vet1 = new Vet();
-        vet1.setFirstname("Jeremy");
-        vet1.setLastname("Carnus");
+        vet1.setFirstName("Jeremy");
+        vet1.setLastName("Carnus");
         vet1.getSpecialities().add(savedRadiology);
 
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setFirstname("Rudy");
-        vet2.setLastname("Daabous");
+        vet2.setFirstName("Rudy");
+        vet2.setLastName("Daabous");
         vet1.getSpecialities().add(savedSurgery);
 
         vetService.save(vet2);
